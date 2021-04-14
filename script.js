@@ -5,5 +5,5 @@ toggleButton.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
   toggleButton.classList.toggle("active");
-  navbarLinks.classList.toggle("active");
+  navLinks.classList.toggle("active");
 }
