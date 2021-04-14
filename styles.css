@@ -428,4 +428,13 @@ div.footer h6 {
     div.snapshot-box-content {
         flex-direction: column;
     }
+    .toggle-button.active .bar:nth-child(2) {
+        opacity: 0;
+    }
+    .toggle-button.active .bar:nth-child(1) {
+        transform: translateY(8px) rotate(45 deg);
+    }
+    .toggle-button.active .bar:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg);
+    }
 }
