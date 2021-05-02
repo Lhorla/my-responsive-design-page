@@ -4,13 +4,13 @@ const navLinks = document.querySelector(".nav-links");
 toggleButton.addEventListener("click", mobileMenu);
 
 function mobileMenu() {
-  toggleButton.classList.toggle("active");
-  navLinks.classList.toggle("active");
+  toggleButton.classList.toggle("show");
+  navLinks.classList.toggle("show");
 }
 
-navLinks.forEach(n => n.addEventListener("click", closeMenu));
+navLinks.addEventListener("click", closeMenu);
 
-function closeMenu () {
-  toggleButton.classList.remove("active");
-  navLinks.classList.remove("active");
+function closeMenu() {
+  toggleButton.classList.remove("show");
+  navLinks.classList.remove("show");
 }
